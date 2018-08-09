@@ -33,10 +33,10 @@ struct command
     };
 
 
-class compiler
+class Compiler
     {
     public:
-        compiler ( std::string tempHumanCodeFileName, std::string tempMachineCodeFileName )
+        Compiler ( std::string tempHumanCodeFileName, std::string tempMachineCodeFileName )
             {
             compilationStartTime = time ( NULL );
             
@@ -48,7 +48,7 @@ class compiler
             makeMachineCode();
             }
             
-        ~compiler()
+        ~Compiler()
             {
             compilationEndTime = time ( NULL );
 
@@ -58,7 +58,7 @@ class compiler
     
     private:
         //// ------------------------------------------------------------------------------------------------
-        int compilationStartTime = 0, compilationEndTime = 0;
+        time_t compilationStartTime = 0, compilationEndTime = 0;
         //// ------------------------------------------------------------------------------------------------
         std::string humanCodeFileName = "", machineCodeFileName = "";
         //// ------------------------------------------------------------------------------------------------      

@@ -7,9 +7,11 @@
 //
 
 #include <iostream>
+#include "compiler.h"
 
 int main() 
     {
+    auto myCompiler = Compiler ( "humanCode.txt", "machineCode.txt" );
 
     return 0;
     }
