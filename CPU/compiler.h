@@ -156,20 +156,10 @@ class compiler
                     }
                 else
                     {
-//                    std::cout << "\nGGG:" << currentInputLine << " " << currentCommandIdTemp << "\n";
-                    /*
 
-                    commandsArray [ currentCommand ].operandaModifier = -3;
-                    commandsArray [ currentCommand ].argumentS = currentInputLine;
-                    jumpMarks [ currentInputLine ] = commandInMemoryLocation;
-                    
-                    */
-                    
-//                    printf ( "GGGG: ''%s''\n", currentCommandTemp.c_str() );
                     
                     if ( currentCommandTemp == jmpCommandHuman )
                         {
-//                        printf ( "TTTT\n" );
                         commandsArray [ currentCommand ].operandaModifier = -2;
                         commandsArray [ currentCommand ].commandId = jmp;
                         commandsArray [ currentCommand ].argumentS = getWordInString ( currentInputLine, 1 );  
@@ -186,40 +176,16 @@ class compiler
             
                 }
             
-            /*
-            for ( int i = 0; i < linesQuantity; i++ )
-                {
-                std::cout << commandsArray [ i ].commandId << " " << commandsArray [ i ].operandaModifier << " " << commandsArray [ i ].argument << " " << commandsArray [ i ].argument2 << " " << commandsArray [ i ].argumentS << " " << commandsArray [ i ].argumentS2 << std::endl;
-                }
-            */
-            
-            /// -- PASSING JUMPS MEMORY LOCATIONS 
-            
             for ( int i = 0; i < linesQuantity; i++ )
                 {
                 if ( commandsArray [ i ].operandaModifier == -2 )
                     {
                     commandsArray [ i ].argument = jumpMarks [ commandsArray [ i ].argumentS ];
-//                    printf ( "\nJUMP: %f\n", commandsArray [ i ].argument );
                     }
                 }
-                
-            /*    
-            ////-------
-            std::cout << "JUMP ..... ///////////////\n";
-            for ( int y = 0; y < 9; y++ )
-                {
-                std::cout << " " << debug [ y ] << " COMMAND MODIFIER " << commandsArray [ y ].operandaModifier << "\n";
-                }
-            std::cout << "\nJUMP ..... ///////////////\n";
-            ////------
-            */
 
             
-            ////
-            
             std::string lineToWrite = "";
-//            std::cout << commandsArray [ 1 ].commandId << " " << commandsArray [ 1 ].operandaModifier << " " << commandsArray [ 1 ].argumentS << " " << commandsArray [ 1 ].argumentS2 << " " << commandsArray [ 1 ].argument << " " << commandsArray [ 1 ].argument2 << "\n";
             std::string sumOfMemoryCells = std::to_string ( commandInMemoryLocation ) + "\n";
             machineCodeFile.writeString ( sumOfMemoryCells );
             for ( int currentLine = 0; currentLine < linesQuantity; currentLine++ ) 
@@ -267,11 +233,7 @@ class compiler
                     {
                     lineToWrite = std::to_string ( commandsArray [ currentLine ].commandId ) + " " + std::to_string ( commandsArray [ currentLine ].argument ) + "\n";
                     }
-                if ( commandState == -3 ) // jump mark;
-                    {
-//                    std::string temp = commandsArray [ currentLine ].argumentS;
-//                    lineToWrite = temp + "\n";
-                    }
+
                     
                 machineCodeFile.writeString ( lineToWrite );
             
@@ -379,7 +341,6 @@ class compiler
             
         int argumentAnalyser ( command* commandsArray, int currentCommand, std::string currentArgumentTemp )
             {
-//            std::cout << "HEEY: " << currentArgumentTemp << '\n';
             int memoryShift = 0;
             
             if ( currentArgumentTemp [ 0 ] == '[' )
@@ -470,7 +431,6 @@ class compiler
         
         int getCommandId ( std::string tempCommand )
             {
-//            printf ( "HERE WHAT I GET: %s\n", tempCommand.c_str() );
             if ( tempCommand == haultCommandHuman )
                 {                
                 return hlt;
@@ -581,8 +541,6 @@ class compiler
         
         int recogniseRegister ( std::string registerName )
             {
-//            printf ( "HERE WHAT I'VE GOT: %s\n", registerName.c_str() );
-
             if ( registerName == "ax" )
                 {
                 return ax;
@@ -630,6 +588,7 @@ class compiler
                 return nS;
                 }
                 
+            
             //// HERE SHOULD BE ERROR, register not found during parsing;    
             
             return -1;

@@ -10,37 +10,6 @@
 
 //// ------------------------------------------------------------------------------------------------
 
-//enum commands
-//    {
-//    hlt,
-//    pushS, pushR,
-//    popS, popR,
-//    in, out, 
-//    add, sub, mul, myDiv, 
-//    mySin, myCos, mySqrt, myAbs,
-//    myDup, dump,
-//    nullCommand  
-//    };
-
-
-//enum commands
-//    {
-//    hlt, nullCommand,
-//    in, out,
-//    add, sub, mul, myDiv, // 7
-//    mySin, myCos, mySqrt, myAbs, // 11
-//    myDup, dump,
-//    borderJump,
-//    jmp, jne, ja, jae, jb, jbe, 
-//    borderArgument,
-//    pushR, popR, 
-//    pop, // 24
-//    pushS, popS,
-//    pushRAM, popRAM, 
-//    push // 29
-//    };
-
-
 enum processorCommands
     {
     hlt, nullCommand,

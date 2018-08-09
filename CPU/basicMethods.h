@@ -6,9 +6,6 @@
 //  Copyright © 2017 Эльдар Дамиров. All rights reserved.
 //
 
-#ifndef basicMethods_h
-#define basicMethods_h
-
 
 bool isDigit ( char inputChar );
 bool isLetter ( char inputChar ); // lowerCase ONLY;
@@ -77,5 +74,3 @@ int fromStringToInt ( char figure )
         return temp;
     }
 
-
-#endif /* basicMethods_h */
