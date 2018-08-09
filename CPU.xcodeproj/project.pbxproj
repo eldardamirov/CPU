@@ -25,6 +25,10 @@
 /* Begin PBXFileReference section */
 		86DCCD71211C30EE00560044 /* CPU */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPU; sourceTree = BUILT_PRODUCTS_DIR; };
 		86DCCD74211C30EE00560044 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		86DCCD7B211C316300560044 /* basicMethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = basicMethods.h; sourceTree = "<group>"; };
+		86DCCD7C211C316400560044 /* fileIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fileIO.h; sourceTree = "<group>"; };
+		86DCCD7D211C316400560044 /* commandsList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = commandsList.h; sourceTree = "<group>"; };
+		86DCCD7E211C316400560044 /* compiler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = compiler.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,10 @@
 			isa = PBXGroup;
 			children = (
 				86DCCD74211C30EE00560044 /* main.cpp */,
+				86DCCD7B211C316300560044 /* basicMethods.h */,
+				86DCCD7D211C316400560044 /* commandsList.h */,
+				86DCCD7E211C316400560044 /* compiler.h */,
+				86DCCD7C211C316400560044 /* fileIO.h */,
 			);
 			path = CPU;
 			sourceTree = "<group>";
