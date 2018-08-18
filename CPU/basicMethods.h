@@ -7,6 +7,9 @@
 //
 
 
+#include <string>
+#include <math.h>
+
 bool isDigit ( char inputChar );
 bool isLetter ( char inputChar ); // lowerCase ONLY;
 int fromStringToNumber ( std::string number );
@@ -32,7 +35,6 @@ bool isLetter ( char inputChar ) // lowerCase ONLY;
     else
         {
         return false;
-        std::cout << "OO";
         }
         
     }

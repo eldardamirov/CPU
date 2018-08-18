@@ -7,7 +7,36 @@
 //
 
 #include <iostream>
+
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+#include <functional>
+#include <unordered_map>
+
+#include <time.h>
+
+#include <time.h>
+#include <string>
+#include <unordered_map>
+
+
+#include "logsConstants.h"
+#include "basicMethods.h"
+#include "commandsList.h"
+
+#include "fileIO.h"
+
+#include "stack.h"
+
 #include "compiler.h"
+
+
+
+
+
+
 
 int main() 
     {

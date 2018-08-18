@@ -25,7 +25,6 @@
 
 /* Begin PBXFileReference section */
 		860F434721282E06000032D8 /* core.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = core.cpp; sourceTree = "<group>"; };
-		860F434821282E06000032D8 /* core.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = core.hpp; sourceTree = "<group>"; };
 		860F434A21282E51000032D8 /* stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
 		860F434B21282EE0000032D8 /* logsConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = logsConstants.h; sourceTree = "<group>"; };
 		86DCCD71211C30EE00560044 /* CPU */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPU; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,7 +72,6 @@
 				86DCCD7C211C316400560044 /* fileIO.h */,
 				860F434A21282E51000032D8 /* stack.h */,
 				860F434721282E06000032D8 /* core.cpp */,
-				860F434821282E06000032D8 /* core.hpp */,
 				860F434B21282EE0000032D8 /* logsConstants.h */,
 			);
 			path = CPU;

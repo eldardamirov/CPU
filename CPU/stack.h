@@ -6,17 +6,20 @@
 //  Copyright © 2017 Эльдар Дамиров. All rights reserved.
 //
 
+
+
 #define stackUnit stackElement <typeOfData>
 
-#include <stdlib.h>
-#include <stdio.h>
+//#include <stdlib.h>
+//#include <stdio.h>
 #include <math.h>
-#include <functional>
-#include <unordered_map>
-
-#include <time.h>
-
-#include "fileIO.h"
+#include <iostream>
+//#include <functional>
+//#include <unordered_map>
+//
+//#include <time.h>
+//
+//#include "fileIO.h"
 #include "logsConstants.h"
 
 

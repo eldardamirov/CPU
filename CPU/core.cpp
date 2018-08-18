@@ -6,9 +6,12 @@
 //  Copyright © 2018 Эльдар Дамиров. All rights reserved.
 //
 
-#include "core.hpp"
 
+#include "stack.h"
+#include "commandsList.h"
+#include "basicMethods.h"
 
+#include "fileIO.h"
 
 class Processor
     {

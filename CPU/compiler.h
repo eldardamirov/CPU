@@ -9,14 +9,15 @@
 #ifndef compiler_h
 #define compiler_h
 
-#include <stdio.h>
-#include <time.h>
-#include <string>
-#include <unordered_map>
+//#include <stdio.h>
+//#include <time.h>
+//#include <string>
+//#include <unordered_map>
+//
 
-#include "fileIO.h"
-#include "commandsList.h"
-#include "basicMethods.h"
+//#include "commandsList.h"
+//#include "basicMethods.h"
+//#include "fileIO.h"
 
 
 #define commandState commandsArray [ currentLine ].operandaModifier
