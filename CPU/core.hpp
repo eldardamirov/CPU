@@ -10,5 +10,8 @@
 #define core_hpp
 
 #include <stdio.h>
+#include "stack.h"
+#include <stack.h>
+#include "commandsList.h"
 
 #endif /* core_hpp */

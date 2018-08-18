@@ -20,6 +20,7 @@
 #include "logsConstants.h"
 
 
+
 enum { NONE, LOW, MEDIUM, FULL };
 
 /*
